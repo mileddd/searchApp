@@ -1,0 +1,8 @@
+<h2>Search Posts</h2>
+<input type="text" id="searchInput" (keyup)="onSearch($event)">
+
+<ng-container *ngIf="searchText">
+    <p>{{matchingPostsCount}} posts were found</p>
+</ng-container>
+
+
